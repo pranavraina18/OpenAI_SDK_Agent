@@ -32,7 +32,7 @@ A powerful FastAPI-based data analysis assistant that leverages SQL generation, 
 * `uvicorn`
 * `matplotlib`
 * `opencv-python`
-* `openai`
+* `openai-agents`
 
 
 ---
