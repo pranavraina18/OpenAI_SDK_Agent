@@ -1,11 +1,33 @@
 ---
 
-# 📊 API Data Analysis Agent
+# 📊 OpenAI SQL AI Agent
 
-A powerful FastAPI-based data analysis assistant that leverages SQL generation, execution, chart creation, and context-aware memory to turn natural language questions into insightful summaries and visualizations from MySQL databases.
+## Overview
+This project implements an AI-powered agent that converts natural language queries into SQL statements and executes them on a database.
+
+It enables users to interact with structured data using plain English, eliminating the need to write SQL manually.
 
 ---
 
+## Problem
+Querying databases requires knowledge of SQL, which can be a barrier for non-technical users.
+
+---
+
+## Solution
+This project uses an LLM-based agent to:
+- understand user queries in natural language
+- generate SQL queries dynamically
+- execute them on a database
+- return structured results
+
+---
+
+## Architecture
+
+User Input → LLM (OpenAI) → SQL Query Generation → Database Execution → Response
+
+---
 ## 🚀 Features
 
 * 🔍 **Natural Language to SQL**: Converts user queries into optimized MySQL-compatible SQL queries using LLMs.
@@ -55,6 +77,9 @@ OPENAI_API_KEY=your_openai_api_key
 ## ▶️ How to Run
 
 ```bash
+# 1. Clone repo
+git clone https://github.com/pranavraina18/OpenAI_SQL_AI_Agent
+
 # Install dependencies
 pip install -r requirements.txt
 
@@ -119,7 +144,8 @@ uvicorn api_data_analysis_agent:app --host 0.0.0.0 --port 8000 --workers 4
 
 ---
 
-## 📄 License
+## Author
+Pranav Raina
 
 MIT License — feel free to use, improve, and share.
 
