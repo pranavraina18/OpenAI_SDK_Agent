@@ -1,6 +1,6 @@
 ---
 
-# 📊 OpenAI SQL AI Agent
+# 📊 LLM-Powered Data Analysis Agent with SQL Execution & Visualization
 
 ## Overview
 This project implements an AI-powered agent that converts natural language queries into SQL statements and executes them on a database.
@@ -25,8 +25,31 @@ This project uses an LLM-based agent to:
 
 ## Architecture
 
-User Input → LLM (OpenAI) → SQL Query Generation → Database Execution → Response
+User Query
+   ↓
+LLM Agent (Natural Language Understanding)
+   ↓
+SQL Query Generation (Schema-aware)
+   ↓
+Database Execution (MySQL)
+   ↓
+Data Processing (Pandas)
+   ↓
+Visualization Engine (Matplotlib)
+   ↓
+Response Generation (Insights + Charts)
+   ↓
+Conversation Memory Update
 
+---
+## 💡 Key Highlights
+
+- End-to-end AI agent capable of data querying, analysis, and visualization  
+- Maintains conversational context for multi-step analytical queries  
+- Automatically generates insights and visualizations from raw data  
+- Implements security filtering to prevent exposure of sensitive data  
+- Includes background processes for memory and resource management
+  
 ---
 ## 🚀 Features
 
@@ -147,9 +170,8 @@ uvicorn api_data_analysis_agent:app --host 0.0.0.0 --port 8000 --workers 4
 ## Author
 Pranav Raina
 
+---
+## License
 MIT License — feel free to use, improve, and share.
 
 ---
-
-Would you like me to generate a `requirements.txt` for this project as well?
-
