@@ -2,19 +2,19 @@
 
 # 📊 LLM-Powered Data Analysis Agent with SQL Execution & Visualization
 
-## Overview
+## 📝 Overview
 This project implements an AI-powered agent that converts natural language queries into SQL statements and executes them on a database.
 
 It enables users to interact with structured data using plain English, eliminating the need to write SQL manually.
 
 ---
 
-## Problem
+## ❓ Problem
 Querying databases requires knowledge of SQL, which can be a barrier for non-technical users.
 
 ---
 
-## Solution
+## 💡 Solution
 This project uses an LLM-based agent to:
 - understand user queries in natural language
 - generate SQL queries dynamically
@@ -23,7 +23,7 @@ This project uses an LLM-based agent to:
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart TD
@@ -35,8 +35,8 @@ flowchart TD
     F --> G["Response Generation<br>(Insights + Charts)"]
     G --> H["Conversation Memory Update"]
 
-    style A fill:#e3f2fd,stroke:#1976d2
-    style H fill:#e8f5e9,stroke:#388e3c
+    style A stroke:#1976d2
+    style H stroke:#388e3c
 ```
 ---
 ## 💡 Key Highlights
@@ -64,8 +64,9 @@ flowchart TD
 * Python 3.10+
 * MySQL database
 * OpenAI API key
+---
 
-### Key Dependencies
+## 🛠️ Key Dependencies
 
 * `FastAPI`
 * `pandas`
@@ -75,7 +76,6 @@ flowchart TD
 * `matplotlib`
 * `opencv-python`
 * `openai-agents`
-
 
 ---
 
@@ -111,29 +111,6 @@ API will be available at `http://localhost:8000/analyze/`.
 
 ---
 
-## 📬 API Usage
-
-### POST `/analyze/`
-
-**Request Body:**
-
-```json
-{
-  "user_request": "Show the average revenue per month this year",
-  "database": "aol",
-  "table_name": "your_table_name",
-  "conversation_id": "session_123"
-}
-```
-
-**Response:**
-
-* Insightful summary
-* Path to generated chart (if applicable)
-* Suggestions for deeper analysis
-
----
-
 ## 📉 Chart Output
 
 All charts are saved as `.png` in the `charts/` folder with absolute paths returned in the response.
@@ -164,11 +141,11 @@ uvicorn api_data_analysis_agent:app --host 0.0.0.0 --port 8000 --workers 4
 
 ---
 
-## Author
+## 👤 Author
 Pranav Raina
 
 ---
-## License
+## 📜 License
 MIT License — feel free to use, improve, and share.
 
 ---
