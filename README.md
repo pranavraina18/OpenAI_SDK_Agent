@@ -25,21 +25,18 @@ This project uses an LLM-based agent to:
 
 ## Architecture
 
-User Query
-   ↓
-LLM Agent (Natural Language Understanding)
-   ↓
-SQL Query Generation (Schema-aware)
-   ↓
-Database Execution (MySQL)
-   ↓
-Data Processing (Pandas)
-   ↓
-Visualization Engine (Matplotlib)
-   ↓
-Response Generation (Insights + Charts)
-   ↓
-Conversation Memory Update
+```mermaid
+flowchart TD
+    A["User Query"] --> B["LLM Agent<br>(Natural Language Understanding)"]
+    B --> C["SQL Query Generation<br>(Schema-aware)"]
+    C --> D["Database Execution<br>(MySQL)"]
+    D --> E["Data Processing<br>(Pandas)"]
+    E --> F["Visualization Engine<br>(Matplotlib)"]
+    F --> G["Response Generation<br>(Insights + Charts)"]
+    G --> H["Conversation Memory Update"]
+
+    style A fill:#e3f2fd,stroke:#1976d2
+    style H fill:#e8f5e9,stroke:#388e3c
 
 ---
 ## 💡 Key Highlights
