@@ -37,7 +37,7 @@ flowchart TD
 
     style A fill:#e3f2fd,stroke:#1976d2
     style H fill:#e8f5e9,stroke:#388e3c
-
+```
 ---
 ## 💡 Key Highlights
 
